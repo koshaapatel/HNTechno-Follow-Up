@@ -1,0 +1,193 @@
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition"
+		template="/WEB-INF/jsp/admin/home.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="body" value="" />
+	</definition>
+	<!-- userpanel -->
+			<definition name="base.definitionuserpanel" template="/WEB-INF/jsp/user/userHome.jsp">
+			<put-attribute name="title" value="" />
+			<put-attribute name="body" value="" />
+			</definition>
+	        <!-- end -->		
+			
+			
+	
+	<definition name="home" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/welcome.jsp" />
+	</definition>
+	 <definition name="Aboutus" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/aboutUs.jsp" />
+	</definition>
+	
+	<definition name="services" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/service.jsp" />
+	</definition>
+
+	<definition name="WebDesigning" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/webDesigning.jsp" />
+	</definition>
+	<definition name="appdevlop" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/applicationdevelopement.jsp" />
+	</definition>
+	<definition name="technology" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/technologies.jsp" />
+	</definition>
+	<definition name="mobileapp" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/mobAppDev.jsp" />
+	</definition> 
+	<definition name="userinquiry" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userinquiry.jsp" />
+	</definition>
+	<definition name="tranning" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/training.jsp" />
+	</definition>
+	<definition name="directtr" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/directTraining.jsp" />
+	</definition>
+	<definition name="livetr" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/liveProTraining.jsp" />
+	</definition>
+	<definition name="onlinetr" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/onlineTraining.jsp" />
+	</definition>
+	<definition name="userlanguage" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/userlanguage.jsp" />
+	</definition>
+	<definition name="usermaterial" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/usermaterial.jsp" />
+	</definition>
+	<definition name="successtr" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/successfulTraining.jsp" />
+	</definition>
+	<definition name="contact" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/contactUs.jsp" />
+	</definition>
+	
+	<definition name="particular" extends="base.definitionuserpanel">
+		<put-attribute name="title" value="HN TECHNO" />
+		<put-attribute name="body" value="/WEB-INF/jsp/user/java.jsp" />
+	</definition>
+			
+			
+	<definition name="base.defin"
+		template="/WEB-INF/jsp/admin/login.jsp">
+	</definition>
+    
+     <definition name="base.getdata"	
+	template="/WEB-INF/jsp/admin/ajaxformaterial.jsp">
+	</definition>
+
+	<definition name="login" extends="base.defin">
+		
+	</definition>
+	<definition name="editprofile" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/editprofile.jsp" />
+	</definition>
+	<definition name="welcome" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/welcome.jsp" />
+	</definition>
+	<definition name="error" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/error.jsp" />
+	</definition>
+	<definition name="lang" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/Add-Language.jsp" />
+	</definition>
+	<definition name="sublang" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/Add-Sub-Language.jsp" />
+	</definition>
+	<definition name="material" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/material-upload.jsp" />
+	</definition>
+	<definition name="video" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/video-upload.jsp" />
+	</definition>
+	<definition name="inquiry" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/inquiry.jsp" />
+	</definition>
+	<definition name="getdata" extends="base.getdata">
+	</definition>
+	<definition name="country" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addcountry.jsp" />
+	</definition>
+	<definition name="state" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addstate.jsp" />
+	</definition>
+	<definition name="city" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addcity.jsp" />
+	</definition>
+	<definition name="university" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/adduniversity.jsp" />
+	</definition>
+	<definition name="college" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addcollege.jsp" />
+	</definition>
+	<definition name="addinquiry" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addinquiry.jsp" />
+	</definition>
+	<definition name="field" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addfield.jsp" />
+	</definition>
+	<definition name="registration" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/registration.jsp" />
+	</definition>
+	<definition name="addregistration" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addregistration.jsp" />
+	</definition>
+	<definition name="facultydetails" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/facultydetails.jsp" />
+	</definition>
+	<definition name="addfacultydetails" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addfacultydetails.jsp" />
+	</definition>
+	<definition name="batchdetails" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/batchdetails.jsp" />
+	</definition>
+	<definition name="createbatch" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/createbatch.jsp" />
+	</definition>
+	<definition name="addregistration" extends="base.definition">
+		<put-attribute name="title" value="Hello Spring MVC" />
+		<put-attribute name="body" value="/WEB-INF/jsp/admin/addstudentdetails.jsp" />
+	</definition>
+</tiles-definitions>
